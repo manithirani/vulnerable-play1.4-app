@@ -6,7 +6,7 @@
 
 ## Installing play 1.4
 ```
-$ export $PLAY=<play-install-directory>
+$ export PLAY=<play-install-directory>
 $ wget -qO- https://downloads.typesafe.com/play/1.4.6/play-1.4.6.zip | tar xvz - -C $PLAY
 # To confirm installation
 $ $PLAY/play-1.4.6/play help
